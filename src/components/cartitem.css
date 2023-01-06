@@ -1,0 +1,16 @@
+.cartitem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.right img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin: 1rem;
+    
+}
+.left div{
+    font-size: 1rem;
+}
