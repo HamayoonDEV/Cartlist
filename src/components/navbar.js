@@ -12,7 +12,7 @@ const Navbar = () => {
             <h1>Cart</h1>
         </div>
         <div className='Cart-icon'>
-            <Link to={'https://icons8.com/icon/9671/shopping-cart'} />
+            <FaFacebook/>
         </div>
     </div>
   )
