@@ -12,7 +12,13 @@
     margin-right:10rem ;
 }
 .Cart-icon img{
-    height: 5rem;
-    width: 5rem;
+    height: 3rem;
+    width: 3rem;
     
+}
+span{
+    width: 10rem;
+    background-color: black;
+    color: white;
+    border-radius:50% ;
 }
