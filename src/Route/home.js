@@ -31,6 +31,15 @@ this.state = {
    ]
 }
 }
+handleIncreaseQty = (product)=>{
+        const {products}=this.state
+        const index = products.indexOf(product)
+        products[index].qty +=1
+
+        this.setState({
+          products:products
+        })
+}
   
   
   render(){
@@ -40,7 +49,7 @@ this.state = {
     <Navbar/>
     
     {products.map((product)=>{
-      return <Cartitem product={product} key={product.id} />
+      return <Cartitem product={product} key={product.id} onIncreaseQuntity={this.handleIncreaseQty}  />
 
     })}
     
