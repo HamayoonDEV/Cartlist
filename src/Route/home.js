@@ -40,6 +40,28 @@ handleIncreaseQty = (product)=>{
           products:products
         })
 }
+handleDecreaseQty = (product)=>{
+        
+        const {products} =this.state
+        const index = products.indexOf(product)
+        if(products[index].qty === 0){
+          return
+        }
+
+        products[index].qty--
+
+        this.setState({
+          products:products
+        })
+}
+handelDelete = (id)=>{
+        const {products}=this.state
+
+        const item = products.filter((item)=> item.id !== id)
+        this.setState({
+          products:item
+        })
+}
   
   
   render(){
@@ -49,7 +71,7 @@ handleIncreaseQty = (product)=>{
     <Navbar/>
     
     {products.map((product)=>{
-      return <Cartitem product={product} key={product.id} onIncreaseQuntity={this.handleIncreaseQty}  />
+      return <Cartitem product={product} key={product.id} onIncreaseQuntity={this.handleIncreaseQty} onDecreaseQty = {this.handleDecreaseQty}  onDeleteitem = {this.handelDelete} />
 
     })}
     

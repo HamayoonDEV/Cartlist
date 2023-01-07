@@ -20,8 +20,8 @@ class Cartitem extends React.Component {
     </div>
     <div className='btn-icons' >
     <img alt='increase' src='https://cdn-icons-png.flaticon.com/128/7171/7171790.png' onClick={()=>this.props.onIncreaseQuntity(this.props.product)} />
-        <img alt='decrease' src='https://cdn-icons-png.flaticon.com/128/7171/7171789.png'  />
-        <img alt='delete' src='https://cdn-icons-png.flaticon.com/128/1214/1214428.png' />
+        <img alt='decrease' src='https://cdn-icons-png.flaticon.com/128/7171/7171789.png' onClick = {()=>this.props.onDecreaseQty(this.props.product)} />
+        <img alt='delete' src='https://cdn-icons-png.flaticon.com/128/1214/1214428.png'onClick={()=>this.props.onDeleteitem(this.props.product.id)} />
     </div>
     </>
   )}
