@@ -2,14 +2,7 @@ import './cartitem.css'
 import React from 'react'
 
 class Cartitem extends React.Component {
-    constructor(){
-        super()
-    this.state = {
-        price:999,
-        title : 'Fan',
-        image:"",
-        qty:1
-    }}
+   
     increase =() => {
         this.setState((previousState)=>{
             return{
@@ -30,16 +23,17 @@ class Cartitem extends React.Component {
 
     }
     render(){
+        const {price,title,qty,image}=this.props.product
   return (
     <>
     <div className='cartitem' >
         <div className='right' >
-            <img alt='' src={this.state.image} />
+            <img alt='' src={image} />
         </div>
         <div className='left' >
-            <div><h1>{this.state.title}</h1></div>
-            <div> price:{this.state.price}</div>
-            <div>qty:{this.state.qty}</div>
+            <div><h1>{title}</h1></div>
+            <div> price:{price}</div>
+            <div>qty:{qty}</div>
 
         </div>
     </div>
