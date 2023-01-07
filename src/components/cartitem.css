@@ -14,3 +14,12 @@
 .left div{
     font-size: 1rem;
 }
+.btn-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-icons img{
+    height: 2.5rem;
+    width: 2.5rem;
+}

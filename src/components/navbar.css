@@ -10,5 +10,9 @@
 }
 .Cart-icon{
     margin-right:10rem ;
-    font-size: 2rem;
+}
+.Cart-icon img{
+    height: 5rem;
+    width: 5rem;
+    
 }

@@ -12,7 +12,7 @@ const Navbar = () => {
             <h1>Cart</h1>
         </div>
         <div className='Cart-icon'>
-            <FaFacebook/>
+            <img alt='cart' src='https://t3.ftcdn.net/jpg/03/13/36/92/240_F_313369233_w50qr2zvY2wGOsV9suFcoifB1JRfZK5M.jpg' />
         </div>
     </div>
   )
