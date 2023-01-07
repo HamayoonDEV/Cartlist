@@ -7,6 +7,8 @@ function Home() {
     <>
     <Navbar/>
     <Cartitem/>
+    <Cartitem/>
+    <Cartitem/>
     </>
   )
 }
